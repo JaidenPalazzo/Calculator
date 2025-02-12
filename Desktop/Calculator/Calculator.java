@@ -6,17 +6,17 @@ public class Calculator{
 
          //ask user for first number
          System.out.print("Please enter a number: ");
-         int n = scanner.nextInt(); 
+         float n = scanner.nextFloat(); 
 
          //ask user for second number
          System.out.print("Please enter another number: ");
-         int n2 = scanner.nextInt(); 
+         float n2 = scanner.nextFloat(); 
 
          //ask user subtraction vs addition 
          System.out.print("Would you like to multiply, divide, add, or subtract these numbers? "); 
          String answer = scanner.next(); 
 
-         int output = 0; 
+         float output = 0; 
 
          if (answer.equals("multiply")){
             //multiply numbers 
