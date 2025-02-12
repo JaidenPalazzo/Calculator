@@ -13,15 +13,26 @@ public class Calculator{
          int n2 = scanner.nextInt(); 
 
          //ask user subtraction vs addition 
-         System.out.print("Would you like to subtract or add these numbers? "); 
+         System.out.print("Would you like to multiply, divide, add, or subtract these numbers? "); 
          String answer = scanner.next(); 
 
          int output = 0; 
 
-         if(answer.equals("add")){
+         if (answer.equals("multiply")){
+            //multiply numbers 
+            output = n * n2; 
+         }
+
+         else if(answer.equals("divide")){
+            //add numbers 
+            output = n / n2; 
+         }
+
+         else if(answer.equals("add")){
             //add numbers 
             output = n + n2; 
          }
+
          else{
             //subtract numbers 
             output = n - n2; 
