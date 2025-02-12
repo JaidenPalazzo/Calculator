@@ -12,11 +12,23 @@ public class Calculator{
          System.out.print("Please enter another number: ");
          int n2 = scanner.nextInt(); 
 
-         //add numbers 
-         int sum = n + n2; 
+         //ask user subtraction vs addition 
+         System.out.print("Would you like to subtract or add these numbers? "); 
+         String answer = scanner.next(); 
+
+         int output = 0; 
+
+         if(answer.equals("add")){
+            //add numbers 
+            output = n + n2; 
+         }
+         else{
+            //subtract numbers 
+            output = n - n2; 
+         }
 
          //print results
-         System.out.println("Sum of Numbers: " + sum); 
+         System.out.println("Result: " + output); 
 
          //close scanner
          scanner.close(); 
