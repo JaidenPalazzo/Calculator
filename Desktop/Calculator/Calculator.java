@@ -21,25 +21,36 @@ public class Calculator{
          if (answer.equals("multiply")){
             //multiply numbers 
             output = n * n2; 
+            System.out.print("Result: " + output); 
          }
 
          else if(answer.equals("divide")){
+            if(n2 == 0){
+                System.out.print("Error: Divide by Zero"); 
+            }
+
+            else{
             //add numbers 
             output = n / n2; 
+            System.out.print("Result: " + output); 
+
+            }
          }
 
          else if(answer.equals("add")){
             //add numbers 
             output = n + n2; 
+            System.out.print("Result: " + output); 
+
          }
 
          else{
             //subtract numbers 
-            output = n - n2; 
+            output = n - n2;  
+            System.out.print("Result: " + output); 
+            
          }
 
-         //print results
-         System.out.println("Result: " + output); 
 
          //close scanner
          scanner.close(); 
